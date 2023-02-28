@@ -1,5 +1,4 @@
-import Head from "next/head";
-import styles from "../styles/Home.module.css";
+import styles from "../../styles/Home.module.css";
 import Link from "next/Link";
 
 export async function getServerSideProps() {
@@ -10,10 +9,6 @@ export async function getServerSideProps() {
 }
 
 export default function Home({ time }) {
-  const a = () => {};
-
-  a();
-
   return (
     <>
       <h1 className={styles.title}>{time}</h1>
